@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding-top: 10px 15px;
+    background-color: white;
+  
+}
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: rgb(221, 216, 216);
+}
+.logo{
+    text-align: center;
+    color: #008246;
+}
+    .logo h3{
+font-size: 25px;
+font-family: 'Trebuchet MS';
+font-weight: 100;
+    }
+.logo p{
+    font-size: 7px;
+    font-family: sans-serif;
+}
+.site-nav{
+    top: 0;
+    left: 0;
+}
+header ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;     
+}
+header a {
+    color:#008246;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+}
+header a:hover{
+    cursor: pointer;
+    color:black;
+    font-weight: 300;
+    font-size:16px ;
+}
+
+
+.attractions-grid {
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.attraction-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.attraction-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.attraction-image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #006633, #ce2b37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.attraction-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.attraction-content {
+    padding: 2rem;
+}
+
+.attraction-content h3 {
+    font-size: 1.8rem;
+    color: #006633;
+    margin-bottom: 1rem;
+}
+
+.attraction-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.attraction-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 2px solid #eee;
+}
+
+.location {
+    color: #ce2b37;
+    font-weight: bold;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+.footer{
+    background-color: green;
+    
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 200px;
+}
+.social img{
+    width: 50px;
+    margin-top:40px;
+    
+    }
+    .final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    }
+ 
